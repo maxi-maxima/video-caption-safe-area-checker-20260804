@@ -13,6 +13,7 @@ No third-party dependencies are required. Use Python 3.10+.
 ```bash
 python src/video_caption_safe_area_checker.py --help
 python src/video_caption_safe_area_checker.py examples/captions.json
+python src/video_caption_safe_area_checker.py examples/captions.json --format markdown
 python src/video_caption_safe_area_checker.py examples/captions.json --frame 1080x1920 --unsafe 100,50,50,50
 python tests/test_cli.py
 ```
