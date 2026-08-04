@@ -15,6 +15,7 @@ Developer content and AI-generated multimedia are growing; a no-dependency CLI t
 ```bash
 python src/video_caption_safe_area_checker.py --help
 python src/video_caption_safe_area_checker.py examples/captions.json
+python src/video_caption_safe_area_checker.py examples/captions.json --frame 1080x1920 --unsafe 100,50,50,50
 python tests/test_cli.py
 ```
 
@@ -26,11 +27,16 @@ python tests/test_cli.py
 python src/video_caption_safe_area_checker.py examples/captions.json
 ```
 
+自定义平台裁切时，可以覆盖画布尺寸和不安全边距：
+
+```bash
+python src/video_caption_safe_area_checker.py examples/captions.json --frame 1080x1920 --unsafe 100,50,50,50
+```
+
 ## 路线图
 
 - SRT/VTT parser
 - PNG visual overlay export
-- Custom platform presets
 
 ## 许可证
 
